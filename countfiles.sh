@@ -1,1 +1,1 @@
-ls -lR | egrep -c '^-'
+echo * | wc
