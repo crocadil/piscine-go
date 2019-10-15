@@ -1,1 +1,1 @@
-echo * | wc
+ls -l | wc -l
