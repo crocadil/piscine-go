@@ -1,1 +1,1 @@
-ls -la -ld */ | grep ^d | wc -l
+ls -lR | egrep -c '^-'
