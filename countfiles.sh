@@ -1,1 +1,1 @@
-find . -type f -print | wc 
+ls -la | grep ^- | wc -l
