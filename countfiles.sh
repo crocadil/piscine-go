@@ -1,1 +1,1 @@
-# find . -type f -print | wc -l
+sudo find . -type f -print | wc -l
