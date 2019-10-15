@@ -1,1 +1,1 @@
-ls -la | grep ^d | wc -l
+ls -la -ld */ | grep ^d | wc -l
