@@ -2,28 +2,28 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func PrintNbr(n int) {
-	if n < 0 {
+func PrintNbr(x int) {
+	if x < 0 {
 		z01.PrintRune('-')
 	}
-	CrocNbr(n)
+	SetNbr(x)
 }
 
-func CrocNbr(n int) {
-	mama := '0'
-	if n == 0 {
-		z01.PrintRune(mama)
+func SetNbr(x int) {
+	h := '0'
+	if x == 0 {
+		z01.PrintRune(h)
 		return
 	}
-	for i := 1; i <= n%10; i++ {
-		mama++
+	for i := 1; i <= x%10; i++ {
+		h++
 	}
-	for i := -1; i <= n%10; i++ {
-		mama++
+	for i := -1; i >= x%10; i-- {
+		h++
 	}
-	if n/10 != 0 {
-		CrocNbr(n / 10)
+	if x/10 != 0 {
+		SetNbr(x / 10)
 	}
-	z01.PrintRune(mama)
+	z01.PrintRune(h)
 	return
 }
