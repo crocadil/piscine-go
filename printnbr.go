@@ -22,7 +22,7 @@ func Adika(n int) {
 		lon++
 	}
 	if n/10 != 0 {
-		Inks(n / 10)
+		Adika(n / 10)
 	}
 	z01.PrintRune(lon)
 	return
