@@ -2,10 +2,9 @@ package main
 
 import "github.com/01-edu/z01"
 
-func main()  {
-
+func main() {
 	var aRune string = "abcdefghijklmnopqrstuvwxyz\n"
-	
+
 	z01.PrintRune(rune(aRune[0]))
 	z01.PrintRune(rune(aRune[1]))
 	z01.PrintRune(rune(aRune[2]))
@@ -34,5 +33,4 @@ func main()  {
 	z01.PrintRune(rune(aRune[25]))
 	z01.PrintRune(rune(aRune[26]))
 
-	
 }
