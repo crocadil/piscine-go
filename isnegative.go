@@ -7,9 +7,9 @@ func IsNegative(nb int) {
 	int := 1
 
 	if int >= 0 {
-		z01.PrintRune("true")
+		z01.PrintRune('true')
 	} else if int <= 0 {
-		z01.PrintRune("false")
+		z01.PrintRune('false')
     }
 
 }
