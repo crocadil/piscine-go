@@ -6,25 +6,25 @@ func PrintNbr(n int) {
 	if n < 0 {
 		z01.PrintRune('-')
 	}
-	Adika(n)
+	SetNbr(n)
 }
 
-func Adika(n int) {
-	lon := '0'
+func SetNbr(n int) {
+	a := '0'
 	if n == 0 {
-		z01.PrintRune(lon)
+		z01.PrintRune(a)
 		return
 	}
 	for i := 1; i <= n%10; i++ {
-		lon++
+		a++
 	}
 	for i := -1; i <= n%10; i++ {
-		lon++
+		a++
 	}
 	if n/10 != 0 {
-		Adika(n / 10)
+		SetNbr(n / 10)
 	}
-	z01.PrintRune(lon)
+	z01.PrintRune(a)
 	return
 }
 
