@@ -6,30 +6,24 @@ func PrintNbr(n int) {
 	if n < 0 {
 		z01.PrintRune('-')
 	}
-	SetNbr(n)
+	CrocNbr(n)
 }
 
-func SetNbr(n int) {
-	a := '0'
+func CrocNbr(n int) {
+	mama := '0'
 	if n == 0 {
-		z01.PrintRune(a)
+		z01.PrintRune(mama)
 		return
 	}
 	for i := 1; i <= n%10; i++ {
-		a++
+		mama++
 	}
 	for i := -1; i <= n%10; i++ {
-		a++
+		mama++
 	}
 	if n/10 != 0 {
-		SetNbr(n / 10)
+		CrocNbr(n / 10)
 	}
-	z01.PrintRune(a)
+	z01.PrintRune(mama)
 	return
-}
-
-func main() {
-	PrintNbr(-123)
-	PrintNbr(0)
-	PrintNbr(123)
 }
