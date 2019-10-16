@@ -1,6 +1,6 @@
 package main
 
-import "https://github.com/01-edu/z01"
+import "github.com/01-edu/z01"
 
 func main()  {
 
