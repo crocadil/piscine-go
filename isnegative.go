@@ -1,14 +1,14 @@
 package main
 
-import "fmt"
+import "github.com/01-edu/z01"
 
-func main() {
+func IsNegative(nb int) {
 
 	int := 1
 
 	if int >= 0 {
-		fmt.Println("true")
+		z01.PrintRune("true")
 	} else if int <= 0 {
-		fmt.Println("false")
-	}
+		z01.PrintRune("false")
+
 }
