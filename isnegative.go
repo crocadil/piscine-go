@@ -8,7 +8,7 @@ func main()  {
 
 	if int >= 0 {
 		fmt.Println("true")
-	} else if int <= 0{
+	} else if int <= 0 {
 		fmt.Println("false")
 	}
 }
