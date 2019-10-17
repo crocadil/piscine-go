@@ -1,7 +1,9 @@
 package piscine
 
+import "github.com/01-edu/z01"
+
 func PrintStr(str string) {
 
-	var str := "Hello World!"
+	z01.PrintRune(Hello World!)
 
 }
