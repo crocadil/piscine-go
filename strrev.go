@@ -2,8 +2,9 @@ package piscine
 
 func StrRev(s string) string {
 
-	for _, s := range s {
-		result = string(s) + result
+	var asstoface = ""
+	for _, a := range s {
+		asstoface = string(a) + asstoface
 	}
-	return 
+	return asstoface
 }
