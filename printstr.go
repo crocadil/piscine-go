@@ -2,6 +2,6 @@ package piscine
 
 func PrintStr(str string) {
 
-	str := "Hello World!"
+	var str := "Hello World!"
 
 }
