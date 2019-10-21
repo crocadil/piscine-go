@@ -2,13 +2,12 @@ package piscine
 
 func IteractiveFactorial(nb int) int {
 
-    x := 1
+	x := 1
 
-    for i := 1; i <= nb; i++ {
+	for i := 1; i <= nb; i++ {
 
-        x = a * x
-    }
+		x = a * x
+	}
+	return (x)
 
-
-}   
-  
+}
