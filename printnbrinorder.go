@@ -1,42 +1,40 @@
+
 package piscine
 
 import "github.com/01-edu/z01"
 
-func main() {
-	PrintNbrInOrder(32132)
-}
-
 func PrintNbrInOrder(n int) {
+
+	a := 0
+	adiko := []rune{}
+	z := 0
+
 	if n == 0 {
-		z01.PrintRune('0')
-		return
+		adiko = append	(adiko, rune(n))
 	}
-	if n > 0 {
-		var array []int
-		eachValue := 0
 
-		arrayCount := 0
-		var minValue int
-		for n != 0 {
-			eachValue = n % 10
-			n /= 10
-			array = append(array, eachValue)
-		}
+	for n != 0 {
+		a = n % 10
+		n = n / 10
+		adiko = append	(adiko, rune(a))
+	}
 
-		for count := range array {
-			arrayCount = count + 1
-		}
-		for i := 0; i < arrayCount-1; i++ {
-			for j := 0; j < arrayCount-i-1; j++ {
-				if array[j] > array[j+1] {
-					minValue = array[j]
-					array[j] = array[j+1]
-					array[j+1] = minValue
-				}
+	for range	adiko {
+		z++
+	}
+
+	for i := 0; i < z-1; i++ {
+		for j := 0; j < z-1-i; j++ {
+			if	adiko[j] >	adiko[j+1] {
+				k :=	adiko[j]
+				adiko[j] =	adiko[j+1]
+				adiko[j+1] = k
 			}
 		}
-		for i := 0; i < arrayCount; i++ {
-			z01.PrintRune(rune(array[i] + 48))
-		}
 	}
+
+	for i := 0; i < z; i++ {
+		z01.PrintRune	(adiko[i] + 48)
+	}
+	
 }
