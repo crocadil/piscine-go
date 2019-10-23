@@ -6,5 +6,5 @@ func LastRune(s string) rune {
 	for s := range runeArray {
 		count = s + 1
 	}
-	return runeArray[count-1] 
+	return runeArray[count-1]
 }
