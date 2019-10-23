@@ -1,6 +1,10 @@
 package piscine
 
-func FirstRune(s string) rune {
+func LastRune(s string) rune {
 	runeArray := []rune(s)
-	return runeArray[len(s)-1]
+	count := 0
+	for s := range runeArray {
+		count = s + 1
+	}
+	return runeArray[count-1] 
 }
